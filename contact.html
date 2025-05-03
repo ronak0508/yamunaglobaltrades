@@ -147,6 +147,12 @@
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </div>
                     </form>
+                    <iframe
+                        name="hidden_iframe"
+                        id="hidden_iframe"
+                        style="display:none"
+                        onload="if(submitted) alert('Thank you! Your message has been sent.');">
+                    </iframe>
                 </div>
             </div>
         </div>
