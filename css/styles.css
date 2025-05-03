@@ -197,7 +197,7 @@ header .container {
 }
 
 .logo img {
-    max-width: 50px;
+    max-width: 150px;
     height: auto;
     margin-right: 10px;
 }
@@ -623,7 +623,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
-
+logo
 .team-member {
     background-color: var(--white);
     border-radius: 5px;
