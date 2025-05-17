@@ -182,7 +182,7 @@ header {
     z-index: 1000;
     background-color: var(--white);
     box-shadow: var(--box-shadow);
-    padding: 15px 0;
+    padding: 0;
 }
 
 header .container {
