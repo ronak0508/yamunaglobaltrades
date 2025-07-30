@@ -337,11 +337,11 @@ function initializeSlider(sliderId, prevBtnId, nextBtnId, dotsId) {
             title: 'Ice Cream Cups',
             description: 'Perfect for ice cream, desserts, and frozen treats. Custom print available. Colors: White, Kraft.',
             images: [
-                'img/products/ice-cream-cup.jpg',
-                'img/products/ice-cream-cup.jpg',
-                'img/products/ice-cream-cup.jpg',
-                'img/products/ice-cream-cup.jpg',
-                'img/products/ice-cream-cup.jpg'
+                'img/products/ice-cream-cup1.jpg',
+                'img/products/ice-cream-cup2.jpg',
+                'img/products/ice-cream-cup3.jpg',
+                'img/products/ice-cream-cup4.jpg',
+                'img/products/ice-cream-cup5.jpg'
             ],
             specs: [
                 { label: 'Sizes', value: '100 ml, 130 ml' },
@@ -360,11 +360,11 @@ function initializeSlider(sliderId, prevBtnId, nextBtnId, dotsId) {
             title: 'Paper Bowl & Paper Lid',
             description: 'Sturdy, leak-resistant bowls for hot and cold foods. Custom print available. Colors: White, Craft.',
             images: [
-                'img/products/paper-bowl.jpg',
-                'img/products/paper-bowl.jpg',
-                'img/products/paper-bowl.jpg',
-                'img/products/paper-bowl.jpg',
-                'img/products/paper-bowl.jpg'
+                'img/products/paper-bowl1.jpg',
+                'img/products/paper-bowl2.jpg',
+                'img/products/paper-bowl3.jpg',
+                'img/products/paper-bowl4.jpg',
+                'img/products/paper-bowl5.jpg'
             ],
             specs: [
                 { label: 'Sizes', value: '200 ml, 250 ml, 350 ml, 500 ml' },
@@ -384,11 +384,11 @@ function initializeSlider(sliderId, prevBtnId, nextBtnId, dotsId) {
             title: 'Salad Bowl & Lid',
             description: 'Wide, sturdy bowls for salads, pasta, and fresh foods. Custom print available. Colors: White, Craft. PET/PP lid available.',
             images: [
-                'img/products/salad-bowl.jpg',
-                'img/products/salad-bowl.jpg',
-                'img/products/salad-bowl.jpg',
-                'img/products/salad-bowl.jpg',
-                'img/products/salad-bowl.jpg'
+                'img/products/salad-bowl1.jpg',
+                'img/products/salad-bowl2.jpg',
+                'img/products/salad-bowl3.jpg',
+                'img/products/salad-bowl4.jpg',
+                'img/products/salad-bowl5.jpg'
             ],
             specs: [
                 { label: 'Sizes', value: '500 ml, 750 ml, 1000 ml' },
@@ -469,12 +469,16 @@ function initializeSlider(sliderId, prevBtnId, nextBtnId, dotsId) {
     
     // Add click handlers to product items
     document.querySelectorAll('.product-item').forEach((item, index) => {
+    let productKey = item.getAttribute('data-product');
+    
+    if (!productKey) {
         const productKeys = ['single-wall', 'ripple-wall', 'double-wall', 'ice-cream', 'paper-bowl', 'salad-bowl'];
-        const productKey = productKeys[index];
-        
-        if (productKey) {
-            item.addEventListener('click', () => openModal(productKey));
-        }
+        productKey = productKeys[index];
+    }
+    
+    if (productKey) {
+        item.addEventListener('click', () => openModal(productKey));
+    }
     });
     
     // Close modal handlers
