@@ -6,6 +6,8 @@
     <title>Products - Yamuna Global Trades</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Language Switcher -->
+    <script src="js/language-switcher.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -35,6 +37,9 @@
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
+            <div class="translate-container">
+                <div id="google_translate_element"></div>
+            </div>
         </div>
     </header>
 
@@ -46,41 +51,45 @@
         </div>
     </section>
 
-    <!-- Product Showcase -->
+    <!-- Product Categories -->
     <section class="products-section">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Products</h2>
-                <p>Reliable, certified, and ready for international markets</p>
+                <h2>Product Categories</h2>
+                <p>High-quality, eco-friendly products for global markets</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card product-category-card">
                     <div class="product-image">
-                        <img src="img/products/product1.jpg" alt="Tea Paper Cup">
+                        <img src="img/products/paper-cups-category.jpg" alt="Paper Cups Category">
                     </div>
-                    <h3>Tea Paper Cup</h3>
-                    <p>High-quality, eco-friendly paper cups designed for serving hot tea. Perfect for cafes, restaurants, and events.</p>
+                    <h3>Paper Cups</h3>
+                    <p>Comprehensive range of paper cups including tea cups, coffee cups, cold drink cups, and ice cream cups. All products are food-grade and eco-friendly.</p>
+                    <div class="product-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Food-grade materials</li>
+                            <li><i class="fas fa-check"></i> Eco-friendly</li>
+                            <li><i class="fas fa-check"></i> Custom branding available</li>
+                            <li><i class="fas fa-check"></i> Bulk quantities</li>
+                        </ul>
+                    </div>
+                    <a href="paper-cups.html" class="btn btn-primary">Explore Paper Cups</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card product-category-card">
                     <div class="product-image">
-                        <img src="img/products/product2.jpg" alt="Coffee and Cold Drink Cup">
+                        <img src="img/products/paper-bowls-category.jpg" alt="Paper Bowls Category">
                     </div>
-                    <h3>Coffee and Cold Drink Cup</h3>
-                    <p>Versatile paper cups suitable for both hot coffee and cold beverages. Leak-proof and durable for all uses.</p>
-                </div>
-                <div class="service-card">
-                    <div class="product-image">
-                        <img src="img/products/product3.jpg" alt="Ice Cream Paper Cup">
+                    <h3>Paper Bowls</h3>
+                    <p>Premium paper bowls perfect for soups, salads, desserts, and takeaway meals. Sturdy construction with excellent heat retention properties.</p>
+                    <div class="product-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Heat resistant</li>
+                            <li><i class="fas fa-check"></i> Leak-proof design</li>
+                            <li><i class="fas fa-check"></i> Microwave safe</li>
+                            <li><i class="fas fa-check"></i> Various sizes available</li>
+                        </ul>
                     </div>
-                    <h3>Ice Cream Paper Cup</h3>
-                    <p>Sturdy, food-grade paper cups ideal for serving ice cream, frozen yogurt, and desserts. Custom branding available.</p>
-                </div>
-                <div class="service-card">
-                    <div class="product-image">
-                        <img src="img/products/product4.jpg" alt="Coffee Cup with 3 Layer Protection">
-                    </div>
-                    <h3>Coffee Cup with 3 Layer Protection</h3>
-                    <p>Premium coffee cup featuring triple-layer insulation for maximum heat retention and safe handling. Great for takeaway service.</p>
+                    <a href="paper-bowls.html" class="btn btn-primary">Explore Paper Bowls</a>
                 </div>
             </div>
         </div>
@@ -157,4 +166,4 @@
 
     <script src="js/main.js"></script>
 </body>
-</html>
+</html> 
